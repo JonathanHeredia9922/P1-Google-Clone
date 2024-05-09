@@ -1,0 +1,59 @@
+body{
+    margin: 0;/*Que no haya margin ni padding que da el navegador default para 
+    que nosotros lo manipulemos más adelante*/
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100px;/*Para que el header ocipe todo el ancho de la pantalla*/
+    height: 60px;
+}
+
+/*Busca una etiqueta nav que este dentro de la etiqueta header*/
+    header nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+        header nav .nav-right-section {
+            width: 250px;
+            height: auto;
+            display: flex;
+            list-style: none;/* Para quitar los puntos de la lista*/
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+
+    nav .nav-right-section {
+        margin-right: 10px;
+        color: #000000;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    nav .nav-right-section .menu-icon {
+        background-image: url("https://ssl.gstatic.com/gb/images/bar/al-icon.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 25px;
+        height: 25px;
+
+    }
+
+    nav .nav-right-section img {
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+
+main{
+    margin-top: 150px;
+    text-align: center;
+}
